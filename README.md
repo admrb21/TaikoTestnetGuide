@@ -83,22 +83,6 @@ nano .env
 
 <br>
 
-Private Key nasıl alınır sağdaki 3 noktaya tıklayın --- >> ardından hesap bilgileri --- >> Özel anahtarı dışa aktar
-
-![image](https://user-images.githubusercontent.com/101635385/210151390-4342cbb3-5c1c-4e35-96ff-fde422ac08bb.png)
-
-<br>
-
-![image](https://user-images.githubusercontent.com/101635385/210151407-a7b0aa7e-ae39-47cc-b1ab-2697e0d25edf.png)
-
-
-
-
-
-## 🟢 Çalıştırma
-
-Bu işlem sonrası kurulum yapacak ve senkronize olmaya başlayacaktır.
-
 ```
 docker compose up
 ```
@@ -106,36 +90,25 @@ docker compose up
 ![image](https://user-images.githubusercontent.com/101635385/210138255-d7c31fb4-bbe4-4d6d-8703-6ee16f1a0b47.png)
 
 
-## 🟢 Explorer üzerinden block görüntüleme 
+## 🟢 Viewing blocks via explorer
 
-Explorer üzerinden adresinizi yazın aşağıdaki resimdeki gibi ise sorun yok tabi önce senkronize olması gerekiyor. 
+Write your address on Explorer, if it is as in the picture below, there is no problem, of course, it needs to be synchronized first.
 
  * [Explorer](https://l2explorer.a1.taiko.xyz/)
 
 ![image](https://user-images.githubusercontent.com/101635385/210138905-3baea6ea-5424-4197-b4c4-0c23d9578247.png)
 
 
-## 🟢 Log Görme
-
-Eğer başta screen oluşturmadıysanız bir screeen oıluşturup logları görebilirsiniz.
+###Useful commands
 
 ```
 cd simple-taiko-node
 docker compose logs -f
 ```
 
-
-## 🟢 Durdurma
-
-Bu işlem sonrası kurulum yapacak ve senkronize olmaya başlayacaktır.
-
 ```
 docker compose down
 ```
-
-## 🟢 Nodeyi silme
-
-Bu işlem sonrası kurulum yapacak ve senkronize olmaya başlayacaktır.
 
 ```
 docker compose down -v
@@ -143,4 +116,3 @@ cd
 rm -fr simple-taiko-node
 ```
 
-Forklamayı ve beğenmeyi unutmayınız :)
