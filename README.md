@@ -3,8 +3,6 @@
 
 
 <h1 align="center"> Taiko Node </h1>
-<h1 align="center"> Merhaba taiko Node kurulum rehberi <br> by Hercules
-</h1>
 
 Before you can install Node, you need to do the Platform testnet. We will use the wallet address you used in the platform testnet here. The system works with 6060 port, if you have installed a node like celestia, it will conflict. <br>
 
@@ -99,7 +97,7 @@ Write your address on Explorer, if it is as in the picture below, there is no pr
 ![image](https://user-images.githubusercontent.com/101635385/210138905-3baea6ea-5424-4197-b4c4-0c23d9578247.png)
 
 
-###Useful commands
+### Useful commands
 
 ```
 cd simple-taiko-node
