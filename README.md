@@ -1,4 +1,4 @@
-# Taiko Node Kurulum Rehberi
+# Taiko Node Instalation Guide
 ![image](https://user-images.githubusercontent.com/101635385/210137987-bdc3fe6f-270d-40f8-b843-d927a58ca6e9.png)
 
 
@@ -6,25 +6,18 @@
 <h1 align="center"> Merhaba taiko Node kurulum rehberi <br> by Hercules
 </h1>
 
-## 🟢 Ön bilgi
+Before you can install Node, you need to do the Platform testnet. We will use the wallet address you used in the platform testnet here. The system works with 6060 port, if you have installed a node like celestia, it will conflict. <br>
 
-Node kurabilmeniz için öncelikle Platform testnetini yapmanız gerekiyor. Platform testnetinde kullandığınız cüzdan adresini burada kullanacağız. Sistem 6060 port ile çalışıyor celestia gibi node kurduysanız çakışacaktır buna dikkat ediniz. <br>
+Information about the platform testnet <br>
 
-Platform testneti ile ilgili Bilgi <br>
-
-* [Platform Tesneti](https://twitter.com/Hercules4413/status/1608026986164748288)
+* [Platform Test](https://twitter.com/Hercules4413/status/1608026986164748288)
 
 
 ### Explorer:
  * [Explorer](https://l2explorer.a1.taiko.xyz/)
 
- 
- ### Linkler
- * [Hercules Telegram](https://t.me/HerculesNode)
- * [Hercules Twitter](https://twitter.com/Hercules4413)
- * [Taiko Dc](https://discord.gg/taikoxyz)
- 
- ## 🟢 Sistem özellikleri
+
+ ## 🟢 System requirements
 
 Minimum:
 - CPU with 2+ cores
@@ -32,13 +25,12 @@ Minimum:
 - 500 Gb 
 
 
-Önerilern:
+Recommended:
 - Fast CPU with 4+ cores
 - 16GB+ RAM
 - High-performance SSD with at least 1TB of free space
 
 
-## 🟢 Sistem Güncelleme
 ```shell
 sudo apt update
 ```
@@ -46,9 +38,6 @@ sudo apt update
 ```shell
 sudo apt upgrade
 ```
-
-
-## 🟢 Docker Setup
 
 ```shell
 apt install docker-compose
@@ -61,28 +50,21 @@ sudo apt-get update && sudo apt install jq && sudo apt install apt-transport-htt
 ```
 
 
-## 🟢 1. Taiko dosyalarını indirin
-
 ```
 git clone https://github.com/taikoxyz/simple-taiko-node.git
 ```
 
-Screen Oluşturalım
 ```
 screen -S taiko
 ```
 
-taiko Klasörüne Giriş yapalım
 ```
 cd simple-taiko-node
 ```
 
-.env dosyası oluşturalım. Bu dosyayı oluşturduktan sonra Taiko platform testnetinde kullandığınız adresin Private keyini Tilki cüzdanınızdan alacaksınız ve .env dosyasına kaydedeceksiniz. 
 ```
 cp .env.sample .env
 ```
-
-.Env dosyasına girelim burada değiştirmeniz gereken en alttaki bölüm. <br>
 
 ```
 nano .env
@@ -90,10 +72,10 @@ nano .env
 
 <br>
 
-*ENABLE_PROPOSER=true  ( Falseden true çeviriyoruz ) <br>
-*L1_PROPOSER_PRIVATE_KEY= Cüzdanımızın private keyini yazıyoruz <br>
-*L2_SUGGESTED_FEE_RECIPIENT= Cüzdan adresimizi yazıyoruz. <br>
-*ctrl + x Yes diyerek kaydediyoruz. <br>
+*ENABLE_PROPOSER=true  ( false to true ) <br>
+*L1_PROPOSER_PRIVATE_KEY= private key of your wallet <br>
+*L2_SUGGESTED_FEE_RECIPIENT= wallet address <br>
+*ctrl + x Yes and save. <br>
 
 <br>
 
